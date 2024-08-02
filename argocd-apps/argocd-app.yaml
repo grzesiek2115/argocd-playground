@@ -11,3 +11,5 @@ spec:
     path: argocd
     repoURL: https://github.com/grzesiek2115/argocd-playground.git
     targetRevision: main
+  syncPolicy:
+      automated:  {}
