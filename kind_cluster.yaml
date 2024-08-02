@@ -9,3 +9,4 @@ nodes:
   - containerPort: 30950
     hostPort: 80
 - role: worker
+- role: worker

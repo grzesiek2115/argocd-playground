@@ -11,3 +11,7 @@
 - `k get po -n argocd`
 - To port-forward argocd to local browser, use this command `k port-forward svc/argocd-server -n argocd 8085:80`
 - To decode admin password for argocd UI, use `k get secret -n argocd argocd-initial-admin-secret -o jsonpath='{.data.password}' | base64 -d`
+
+### Creating argocd self-managed
+
+- After `a408709b595dcc0ea3fd976cc1036363bd253d4b` commit, please run `k apply -f argocd-app.yaml -n argocd`
