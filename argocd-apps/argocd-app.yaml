@@ -9,5 +9,5 @@ spec:
   project: default
   source:
     path: argocd
-    repoURL: https://https://github.com/grzesiek2115/argocd-playground.git
+    repoURL: https://github.com/grzesiek2115/argocd-playground.git
     targetRevision: main
