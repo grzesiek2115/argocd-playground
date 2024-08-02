@@ -12,4 +12,7 @@ spec:
     repoURL: https://github.com/grzesiek2115/argocd-playground.git
     targetRevision: main
   syncPolicy:
-    automated:  {}
+    automated:
+      prune: false 
+      selfHeal: false
+      allowEmpty: false
