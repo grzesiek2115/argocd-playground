@@ -6,7 +6,7 @@
 
 ## Bootstrapping argocd on k8s cluster
 
-- Take from https://github.com/argoproj/argoproj-deployments/blob/master/argocd/kustomization.yaml, the kustomization.yaml and resources/namespace.yaml
+- Take from `https://github.com/argoproj/argoproj-deployments/blob/master/argocd/kustomization.yaml`, the kustomization.yaml and resources/namespace.yaml
 - `kustomize build . | kubectl apply -f -` run it in kustomization.yaml dir
 - `k get po -n argocd`
 - To port-forward argocd to local browser, use this command `k port-forward svc/argocd-server -n argocd 8085:80`
