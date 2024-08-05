@@ -5,3 +5,6 @@ namespace: argocd
 resources:
   - https://raw.githubusercontent.com/argoproj/argo-cd/v2.11.7/manifests/install.yaml
   - resources/namespace.yaml
+
+patches:
+  - path: resources/argocd-cm.yaml
