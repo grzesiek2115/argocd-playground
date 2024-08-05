@@ -14,4 +14,8 @@
 
 ### Creating argocd self-managed
 
-- After `a408709b595dcc0ea3fd976cc1036363bd253d4b` commit, please run `k apply -f argocd-app.yaml -n argocd`
+- After `22badd0e6d43dbe0375d785896c92bb1ebd0cb34` commit, please run `k apply -f argocd-app.yaml -n argocd`
+
+### Changing reconciliation time
+
+- After `ae8215d0d3c4349226f2a94363e908aba3db487e` commit, please restart `argocd-repo-server` with `kubectl rollout restart -n argocd deployment argocd-repo-server`

@@ -4,3 +4,4 @@ metadata:
   name: argocd-cm
 data:
   timeout.reconciliation: 60s
+  statusbadge.enabled: "true"
